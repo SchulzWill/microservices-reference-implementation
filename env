@@ -1,0 +1,13 @@
+
+export SSH_PUBLIC_KEY_FILE=[YOUR_RECENTLY_GENERATED_SSH_RSA_PUBLIC_KEY_FILE_HERE]
+
+export LOCATION=[YOUR_LOCATION_HERE]
+
+export RESOURCE_GROUP=[YOUR_RESOURCE_GROUP_HERE]
+
+export SUBSCRIPTION_ID=$(az account show --query id --output tsv)
+export TENANT_ID=$(az account show --query tenantId --output tsv)
+
+export PROJECT_ROOT=./microservices-reference-implementation
+export K8S=$PROJECT_ROOT/k8s
+export HELM_CHARTS=$PROJECT_ROOT/charts
